@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+		<title>Document</title>
+		<style>
+			@font-face {
+				font-family: 'Quicksand';
+				src: url(fonts/Quicksand-Light.ttf) format('truetype');
+			}
+
+			* {
+				font-family: 'Quicksand', sans-serif;
+				color: white;
+			}
+
+			.kalender {
+				width:27em;
+				display: flex;
+				align-items: center;
+				color: #222;
+
+			}
+
+			.selector {
+				width:30.3em;
+				height:3em;
+				padding:1em;
+				display: flex;				
+				justify-content:space-between;
+				align-items: center;
+				background: rgba(0,150,150, 1);
+				color: #000;
+			}
+
+			.header {
+				z-index:2;
+				color:white;
+			}
+
+			.tag, .wochentag , .x{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 12px;
+				width: 6em;
+				height: 6em;
+				text-align: center;
+				border: 1px solid rgba(0,150,150, 0.1);
+				color: #000;
+			}
+
+			.tag:hover {
+				cursor: pointer;
+				border: 1px solid rgba(0,150,150, 1);
+				font-weight:bold ;
+				background:rgba(0,150,150, 0.2);
+			} 
+
+			.Sonntag {
+				background: rgba(0,170,140,0.2);
+			}
+
+			.Samstag {
+				background: rgba(0,170,140,0.2);
+			}
+
+
+			i {
+				cursor: pointer;
+			}
+
+			p {
+				color: #222;
+			}
+
+
+
+
+		</style>
+	</head>
+	<body>
+			<div class="selector">
+				<i class="fas fa-chevron-left"></i>
+				<div class="header"></div>
+				<i class="fas fa-chevron-right"></i>
+			</div>
+
+
+		<div class="kalender">
+			<div class="Sonntag">
+				<div class="wochentag">Sonntag</div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+			</div>
+			
+			<div class="Montag">
+				<div class="wochentag">Montag</div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+			</div>
+
+			<div class="Dienstag">
+				<div class="wochentag">Dienstag</div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+			</div>
+
+			<div class="Mittwoch">
+				<div class="wochentag">Mittwoch</div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+			</div>
+
+			<div class="Donnerstag">
+				<div class="wochentag">Donnerstag</div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+			</div>
+
+			<div class="Freitag">
+				<div class="wochentag">Freitag</div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+			</div>
+
+			<div class="Samstag">
+				<div class="wochentag">Samstag</div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+				<div class="tag"></div>
+			</div>		
+		</div>
+
+		<script src="calender.js"></script>
+	</body>
+</html>
